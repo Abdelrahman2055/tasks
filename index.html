@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     *{
+         margin: 0px;
+         padding: 0px;
+         box-sizing: border-box;
+    }
+    .monac{
+         display: flex;
+        
+         gap: 10px;
+        position: absolute;
+        width: 50%;
+        left: 600px;
+    }
+   .rightSide ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+}
+   .rightSide a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+     font-family: Arial, Helvetica, sans-serif;
+}
+ .rightSide .signup a {
+     padding: 10px 20px;
+     white-space: nowrap;
+     border-radius: 20px;
+     background-color: black;
+     color: white;
+     font-weight: 600;
+     display: inline-block;
+}
+
+     .rightSide .login{
+        display: inline-block;
+        position: absolute;
+        width: 10%;
+         right: 90px; 
+    } 
+     .rightSide .signup{
+         position: absolute;
+        width: 5%;
+        right: 90px;
+       
+    }  
+.nav0 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F9C265;
+  padding: 20px 40px; 
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100px; 
+}
+    .nav1 {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+    .nav1 a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 15px;
+}
+         
+    .nav1 .fst{
+         padding: 20px;
+         margin-left: 10px;
+    }
+     .nav1 .snd{
+         padding: 20px;
+    }
+     .nav1 .third{
+         padding: 20px;
+         margin:2.5px
+     }
+     header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+        background-color: #F9C265;
+     }   
+    header h2 {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 100px; 
+}
+     header p{
+         text-justify: auto;
+         padding-right: 100px;
+         margin-bottom: 40px;
+        word-spacing: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 50;
+        font-size: 15px;
+        color: rgb(75, 75, 75);
+     }
+     header a{
+       
+        display: inline-block;
+        padding: 10px 24px;
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+        border-radius: 20px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+     }
+   .rev{
+    display: flex;
+    justify-content: center;
+   }
+   .rev h3{
+    padding: 20px 100px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 70px;
+   }
+   .rev p{
+    padding-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(90, 88, 88);
+    padding-bottom: 100px;
+   }
+   .s1{
+    background-color: #FDF6E4;
+    position: relative;
+     font-family: Arial, Helvetica, sans-serif;
+    
+   }
+   .s1 .leftside1{
+    position: absolute;
+    right: 75px;
+    top: 150px;
+   }
+   .s1 .leftside1 h2{
+    font-size: 70px;
+    padding-bottom: 50px;
+   }
+   .s1 .leftside1 p{
+    font-size: 20px;
+    word-spacing: 5px;
+    color: rgb(86, 86, 86);
+   }
+   .all{
+    display: flex;
+    align-items: center;
+   }
+   .f2{
+    width: 1000px;
+    height: 700px;
+    background-color: #FDF6EC;
+    margin: 200px;
+   }
+   .features{
+    background-color: black;
+    width: 600px;
+    height: 250px;
+    padding: 20px;
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px solid black;
+    border-radius: 20px;
+     margin-right: 130px; 
+    margin-left: 0px;
+    margin-top: 0px;
+   }
+   .features h3{
+        color: white; 
+        font-size: 40px;
+        padding-bottom: 40px;
+        
+   }
+   .features a{
+    text-decoration: none;
+    color: black;
+    background-color: #F8C364;
+    border: 5px solid #F8C364;
+    border-radius: 25px;
+    padding: 10px;
+   }
+   .certificate{
+        width: 250px;
+        height: 250px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 5px solid white;
+        background-color: white;
+        border-radius: 15px;
+   }
+   .certificate .img1{
+        padding-bottom: 20px;
+        padding-left: 20px;
+   }
+   .certificate h3{
+    padding-bottom: 20px;
+    padding-left: 20px;
+   }
+   .certificate p{
+    padding-left: 20px;
+    color: rgb(112, 109, 109);
+    text-justify: auto;
+   }
+   .icons{
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: white; */
+    padding: 40px;
+      
+   }
+    .icon1{
+        padding: 40px;
+        border: 2px solid white;
+        background-color: white;
+        border-radius: 15px;
+    margin-right: 40px;
+   }
+   .icon2{
+        padding: 40px;
+        border: 2px solid white;
+        background-color: white;
+        border-radius: 15px;
+        
+   }
+   .icon3{
+    margin-left: 40px;
+        padding: 40px;
+        border: 2px solid white;
+        background-color: white;
+        border-radius: 15px
+   }
+   .icon1 .im1{
+   padding: 20px;
+   }
+   .icon1 h3{
+padding: 10px;
+   }
+   .icon1 p{
+    color: rgb(103, 101, 101);
+   }
+   .icon2 .im2{
+    padding: 20px;
+   }
+   .icon2 h3{
+    padding: 10px;
+   }
+   .icon2 p{
+    text-justify: auto;
+    color: rgb(103, 101, 101);
+   }
+   .icon3 .im3{
+    padding: 20px;
+   }
+   .icon3 h3{
+    padding: 10px;
+   }
+   .icon3 p{
+    color: rgb(103, 101, 101);
+   }
+   .rev .o1{
+    
+    padding-top: 90px;
+    font-size: 30px;
+    color: #c2ac82;
+    font-weight: 1000;
+}
+.pop{
+    background-color: black;
+    height: 800px;
+    font-family: sans-serif;
+}
+.pop h2{
+color: white;
+text-align: center;
+padding-top: 50px;
+font-size: 40px;
+}
+.pop a{
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 22px;
+    padding: 12px 28px;
+    color: black;
+    font-weight: 700;
+}
+.popular {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+.figure{
+    margin-top: 100px;
+    width: 400px;
+   height: 500px;
+    background-color: white;
+    margin-left: 30px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.figure .star1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    letter-spacing: 1px;
+}
+.clock1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+.imgx{
+    padding-left: 30px;
+}
+.figure h3{
+    padding: 10px 0px;
+    padding-bottom: 50px;
+    font-size: 25px;
+}
+.rate{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pop a.special{
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 22px;
+    padding: 12px 28px;
+    background-color: #F8C363;
+    color: black;
+    font-weight: 700;
+}
+p.rate2{
+    color: rgb(162, 158, 158);
+}
+p.clock2{
+    color: rgb(162, 158, 158);
+}
+.easy{
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+.learn{
+    padding: 200px;
+}
+.learn h2{
+font-size: 50px;
+padding: 20px;
+}
+.learn p{
+    text-transform: capitalize;
+    padding: 20px;
+    color:  rgb(96, 94, 94);;
+    word-spacing: 5px;
+    font-size: 20px;
+}
+.learn ul{
+   list-style-type: none;
+   padding: 10px;
+    word-spacing: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.learn ul li{
+    padding: 10px;
+}
+.ready{
+     width: 1200px;
+    height: 520px;
+    background-color:#F8C567;
+    margin: 200px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Sora', sans-serif;
+    border: 5px solid#F8C567;
+    border-radius: 22px;
+}
+.get{
+    margin-top: 120px;
+    margin-right: 100px;
+}
+.get h2{
+padding: 10px;
+font-size: 40px;
+}
+.get p{
+    padding: 10px;
+    text-transform: capitalize;
+    word-spacing: 5px;
+   margin-bottom: 20px;
+}
+.get a{
+   font-size: 20px;
+    padding: 14px 24px;
+    text-decoration: none;
+   border: 1px solid black;
+   background-color: black;
+   border-radius: 50px;
+   color: #F8C363;
+}
+.try1{
+    background-color: #FDF6E4;
+    font-family: 'Poppins', sans-serif;
+}
+.newIcons{
+    justify-content: center;
+    align-items: center;
+   display: flex;
+}
+
+.try1 h2{
+font-size: 70px;
+font-family: 'Poppins', sans-serif;
+}
+.finally{
+     width: 1200px;
+    height: auto;
+     border: 5px solid black;
+    border-radius: 50px;
+    background-color:#1D1D1D;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+.finally p{
+    padding: 20px;
+    padding-top: 100px;
+    color: rgb(206, 202, 202);
+   word-spacing: 2px;
+}
+.finally ul{
+list-style-type: none;
+}
+.finally h4{
+    color: rgb(226, 224, 224);
+}
+.finally a{
+    text-decoration: none;
+    color: rgb(206, 202, 202); ;
+}
+.free{
+    text-align: center;
+
+}
+.imgc {
+  display: inline-block; 
+  margin-top: 50px; 
+  margin-left: 20px;
+}
+
+.footerstart{
+display: flex;
+}
+.end{
+   margin-bottom: 40px;
+    text-align: right;
+    margin-right: 20px;
+}
+.column1{
+    padding: 20px ;
+    padding-left:100px;
+     margin-top: 100px; 
+}
+.col li{
+    padding-top: 20px;
+}
+</style>
+ <link rel="stylesheet" href="fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+</head>
+<body>
+ <nav class="nav0">
+    <ul class="nav1">
+        <li class="fst"><a href="#">Home</a></li>
+        <li class="snd"><a href="#">Blog</a></li>
+        <li class="third"><a href="#">Course</a></li>
+    </ul>
+    <div class="monac">
+        <h1><a href="#"><img src="image/monac.png" alt=""width="50%"></a></h1>
+    </div>
+    <div class="rightSide">
+        <ul>
+            <li class="login"><a href="#">Log in</a></li>
+            <li class="signup"><a href="#">Sing up</a></li>
+        </ul>
+    </div>
+    </nav>
+<header>
+    <h2>Improve your <br> Skills Faster
+    </h2>
+<div>
+        <p>Speed Up The Skill Acquisition Process By <br> Finding Unlimited Courses That Matches<br> Your Niche.</p>
+        <a href="#">Enroll Now ↗</a>
+</div> 
+</header>
+<main>
+<figure>
+    <img src="image/guy.png" alt=""width="100%">
+</figure>
+<div class="rev">
+    <div>
+        <h3>4.5</h3>
+        <p>80k Reviews</p>
+    </div>
+    <div class="o1">
+        |
+    </div>
+    <div>
+        <h3>30M</h3>
+        <p>Enrollments</p> 
+    </div>
+    <div class="o1">
+        |
+    </div>
+    <div>
+        <h3>2M+</h3>
+        <p>Learners</p>  
+    </div>
+    <div class="o1">
+        |
+    </div>
+    <div>
+        <h3>1K+</h3>
+        <p>Popular Courses</p>
+    </div>
+</div>
+<section class="s1">
+        <img src="image/pc1.png" alt="">
+    <div class="leftside1">
+        <h2>We Provide<br> Smart Online <br> Education </h3>
+        <p>Our Courses Come With Assigned Projects,<br>Direct Instructions With Mentors, Relevant <br> Resources, And Tools That Help You Dive <br> Into In-Depth Learning From Anywhere.</p>
+    </div> 
+</section>
+<section class="f2">
+    <div class="all">
+        <div class="features"> 
+            <h3>Our Features <br> Special For You</h3>
+        <div class="See">
+            <a href="#">See All Features ↗</a>
+        </div> 
+        </div>
+        <div class="certificate">
+             <div class="img1"><img src="image/online-certificate.png" alt=""width="80px"></div><h3>Get Certificate</h3><p>Add Value To Your Certificate And <br> Increase Your Chances Of Getting <br> Hired In Your Dream Job</p>
+        </div>
+    </div>
+    <div class="icons">
+        <div class="icon1">
+        <div class="im1">
+            <img src="image/instructor.png" alt=""width="80px">
+        </div>
+            <h3>Amazing Instructor</h3><p>Our Amazing Instructors Bring <br> Experience, Knowledge And Fun <br> On The Table</p>
+        </div >
+        <div class="icon2">
+        <div class="im2">
+            <img src="image/technical-support.png" alt=""width="80px">
+        </div>
+             <h3>Life Time Support</h3><p>You Will Have Life Time Access <br> Of The Courses & Resources. Also<br>Contacting Instructors Any Time! </p>
+        </div>
+        <div class="icon3">
+        <div class="im3">
+             <img src="image/video-tutorial.png" alt=""width="80px">
+        </div>
+           <h3>Video Lesson</h3><p>Recorded Version Of Lectures <br> From Professional Intstuctions <br> To Boost Your Growth.</p>
+    </div>
+    </div>
+       
+</section>
+<section class="pop">
+  <h2>Popular Courses</h2>
+  <div class="popular">
+    <div class="figure">
+      <div class="imgx">
+        <img src="image/study1.png" alt="" width="200px">
+      </div>
+      <div>
+        <div class="star1">
+          <div class="rate">
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <p class="rate1">4.9</p>
+            <p class="rate2">(430 Review)</p>
+          </div>
+          <div class="clock1">
+            <i class="fa-regular fa-clock"></i>
+            <p class="clock2">02:33:55</p>
+          </div>
+        </div>
+        <h3>Learn English: Beginning<br>Grammer</h3>
+        <a  href="#">View Course</a>
+      </div>
+    </div>
+    <div class="figure">
+      <div class="imgx">
+        <img src="image/study2.png" alt="" width="250px">
+      </div>
+      <div>
+        <div class="star1">
+          <div class="rate">
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <p class="rate1">4.9</p>
+            <p class="rate2">(430 Review)</p>
+          </div>
+          <div class="clock1">
+            <i class="fa-regular fa-clock"></i>
+            <p class="clock2">02:33:55</p>
+          </div>
+        </div>
+        <h3>Learn English: Beginning<br>Grammer</h3>
+        <a class="special" href="#">View Course</a>
+      </div>
+    </div>
+    <div class="figure">
+      <div class="imgx">
+        <img src="image/study3.png" alt="" width="240px">
+      </div>
+      <div>
+        <div class="star1">
+          <div class="rate">
+            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+            <p class="rate1">4.9</p>
+            <p class="rate2">(430 Review)</p>
+          </div>
+          <div class="clock1">
+            <i class="fa-regular fa-clock"></i>
+            <p class="clock2">02:33:55</p>
+          </div>
+        </div>
+        <h3>Learn English: Beginning<br>Grammer</h3>
+        <a href="#">View Course</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="easy">
+    <div class="learn">
+        <h2>Its easy to start <br> Learning</h2>
+        <p>our sing-in process lets you start your learning journey <br> without  much hassle. our  aim is  to create a great learning <br> exprience for you. </p>
+        <ul><li><i class="fa-solid fa-circle-check" style="color: #f7c061;"></i></i>create Account</li>
+        <li><i class="fa-solid fa-circle-check" style="color: #f7c061;"></i>Purchase Lessons</li>
+        <li><i class="fa-solid fa-circle-check" style="color: #f7c061;"></i>Start Learning</li></ul>
+    </div>
+    <div class="imgz">
+        <img src="image/imgphone.png" alt="" width="650px">
+    </div>
+</section>
+</main>
+<section class="try1">
+    <section class="ready">
+<div>
+    <img  src="image/teck1.png" alt="" >
+</div>
+<div class="get">
+    <h2>Get Ready to Started</h2>
+    <p>after a good dinner one can forgive anybody,<br> even One's own relations. </p> 
+    <a href="#">Order Now ↗</a>  
+</section>
+    <div class="free">
+        <h2>Try Learning Free <br> on Mobile App</h2>
+    <div class="newIcons">
+        <a href="https://play.google.com/store/games"><img src="image/googleplay.png" alt=""width="200px"></a>
+        <a href="https://www.apple.com/eg/app-store/"><img src="image/App Store (1).png" alt=""width="200px"></a>
+    </div>
+    </div>
+<footer class="finally">
+  <div class="footerstart">
+    <div class="footer-column">
+      <img class="imgc" src="image/lastmonac.png" alt="" >
+      <p>
+        Speed up the skill acquisition process by <br>
+        finding unlimited courses that match your <br> niche.
+      </p>
+      <p class="rights">© Musemind 2022 | All rights reserved.</p>
+    </div>
+    <div class="column1">
+      <h4>Company</h4>
+      <ul class="col">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press Kit</a></li>
+      </ul>
+    </div>
+    <div class="column1">
+      <h4>Resources</h4>
+      <ul class="col">
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">UX Research Guide</a></li>
+      </ul>
+    </div>
+    <div class="column1">
+      <h4>Product</h4>
+      <ul class="col">
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Enterprise</a></li>
+        <li><a href="#">Integrate</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="end">
+    <a href="#">Terms & Privacy Policy</a>
+  </div>
+</footer>
+</section>
+</body>
+</html>
