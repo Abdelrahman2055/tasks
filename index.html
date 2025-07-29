@@ -5,26 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>monac</title>
     <style>
-     *{
+  *{
          margin: 0px;
          padding: 0px;
          box-sizing: border-box;
+ }
+.monac{
+      display: flex; 
+      gap: 10px;
+      position: absolute;
+      width: 50%;
+      left: 600px;
     }
-    .monac{
-         display: flex;
-        
-         gap: 10px;
-        position: absolute;
-        width: 50%;
-        left: 600px;
-    }
-   .rightSide ul {
+.rightSide ul {
   display: flex;
   list-style: none;
-  gap: 20px;
   align-items: center;
 }
-   .rightSide a {
+.rightSide a {
     text-decoration: none;
     color: black;
     font-weight: 500;
@@ -39,19 +37,17 @@
      font-weight: 600;
      display: inline-block;
 }
-
-     .rightSide .login{
+.rightSide .login{
         display: inline-block;
         position: absolute;
         width: 10%;
-         right: 90px; 
+       right: 90px; 
     } 
-     .rightSide .signup{
-         position: absolute;
-        width: 5%;
-        right: 90px;
-       
-    }  
+.rightSide .signup{
+      position: absolute;
+       width: 5%;
+       right: 90px;
+}  
 .nav0 {
   display: flex;
   align-items: center;
@@ -96,18 +92,17 @@
   font-family: Arial, Helvetica, sans-serif;
   padding-left: 100px; 
 }
-     header p{
-         text-justify: auto;
-         padding-right: 100px;
-         margin-bottom: 40px;
-        word-spacing: 5px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 50;
-        font-size: 15px;
-        color: rgb(75, 75, 75);
-     }
-     header a{
-       
+header p{
+      text-justify: auto;
+      padding-right: 100px;
+      margin-bottom: 40px;
+       word-spacing: 5px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 50;
+      font-size: 15px;
+      color: rgb(75, 75, 75);
+}
+header a{
         display: inline-block;
         padding: 10px 24px;
         text-decoration: none;
@@ -215,9 +210,7 @@
     display: flex;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    /* background-color: white; */
     padding: 40px;
-      
    }
     .icon1{
         padding: 40px;
@@ -230,8 +223,7 @@
         padding: 40px;
         border: 2px solid white;
         background-color: white;
-        border-radius: 15px;
-        
+        border-radius: 15px;  
    }
    .icon3{
     margin-left: 40px;
@@ -430,24 +422,29 @@ font-size: 70px;
 font-family: 'Poppins', sans-serif;
 }
 .finally{
+  position: relative;
      width: 1200px;
     height: auto;
      border: 5px solid black;
-    border-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
     background-color:#1D1D1D;
     margin-left: 200px;
     margin-top: 100px;
 }
 .finally p{
     padding: 20px;
-    padding-top: 100px;
+    padding-top: 50px;
     color: rgb(206, 202, 202);
    word-spacing: 2px;
 }
 .finally ul{
 list-style-type: none;
+padding-bottom: 100px;
+padding-left: 40px;
 }
 .finally h4{
+  padding-left: 40px;
     color: rgb(226, 224, 224);
 }
 .finally a{
@@ -479,6 +476,11 @@ display: flex;
 }
 .col li{
     padding-top: 20px;
+}
+.rights p{
+  text-align: left;
+  position: absolute;
+  bottom: 20px;
 }
 </style>
  <link rel="stylesheet" href="fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
@@ -683,7 +685,6 @@ display: flex;
         Speed up the skill acquisition process by <br>
         finding unlimited courses that match your <br> niche.
       </p>
-      <p class="rights">© Musemind 2022 | All rights reserved.</p>
     </div>
     <div class="column1">
       <h4>Company</h4>
@@ -712,6 +713,9 @@ display: flex;
   </div>
 
   <div class="end">
+  <div class="rights">
+    <p > © Musemind 2022  | All rights reserved. </p>
+  </div>
     <a href="#">Terms & Privacy Policy</a>
   </div>
 </footer>
