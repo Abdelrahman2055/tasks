@@ -80,6 +80,18 @@
          padding: 20px;
          margin:2.5px
      }
+      .nav1 .darkmode{
+          padding: 20px;
+          margin-left: 10px;
+          background-color: transparent;
+          border: none;
+      }
+      .nav1 .lightmode{
+          padding: 20px;
+          margin-left: 10px;
+          background-color: transparent;
+          border: none;
+      }
      header{
         display: flex;
         justify-content: space-between;
@@ -490,6 +502,8 @@ display: flex;
         <li class="fst"><a href="#">Home</a></li>
         <li class="snd"><a href="#">Blog</a></li>
         <li class="third"><a href="#">Course</a></li>
+        <li><div><button class="darkmode" onclick="dark()"><img src="image/night-mode.png" alt=""width="20px"></button></div></li>
+        <li><div><button class="lightmode" onclick="light()"><img src="image/light-mode.png" alt=""width="20px"></button></div></li>
     </ul>
     <div class="monac">
         <h1><a href="#"><img src="image/monac.png" alt=""width="50%"></a></h1>
@@ -500,6 +514,37 @@ display: flex;
             <li class="signup"><a href="#">Sing up</a></li>
         </ul>
     </div>
+    <script>
+       
+    window.onload = function() {
+        const mode = localStorage.getItem('mode');
+        if (mode === 'dark') {
+            setDark();
+        } else {
+            setLight();
+        }
+    };
+
+    function setDark() {
+        document.body.style.backgroundColor = "#1D1D1D";
+        document.body.style.color = "white";
+    }
+
+    function setLight() {
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+    }
+
+    function dark() {
+        setDark();
+        localStorage.setItem('mode', 'dark');
+    }
+
+    function light() {
+        setLight();
+        localStorage.setItem('mode', 'light');
+    }
+    </script>
     </nav>
 <header>
     <h2>Improve your <br> Skills Faster
